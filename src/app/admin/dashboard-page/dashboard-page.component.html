@@ -1,0 +1,33 @@
+<div *ngIf="posts && posts.length; else loading">
+    <div class="form-control">
+        <label for="search">Пошук у заголовках та тексті постів</label>
+        <input id="search" type="text" placeholder="Що шукаєте?" [(ngModel)]="searchStr">
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>Автор</th>
+            <th>Заголовок</th>
+            <th>Дата</th>
+            <th>Дія</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let post of posts | searchPosts: searchStr; let idx = index">
+            <td>{{idx+1}}</td>
+            <td>{{post.author}}</td>
+            <td>{{post.title}}</td>
+            <td>{{post.date | date: "dd.MM.YYYY (HH:mm)"}}</td>
+            <td>
+                <button class="btn btn-link open" [routerLink]="['/admin', 'post', post.id, 'edit']">Редагувати</button>
+                <a (click)="remove(post.id)">Видалити</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<ng-template #loading>
+    <p class="text-center">ЗАВАНТАЖЕННЯ...</p>
+</ng-template>
