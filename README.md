@@ -2,7 +2,7 @@
 
 ## SUMMARY
 
-[MyBlog](https://myblog-1d8f8.web.app) is my first full-length project. It was created during the course "Angular 9. Theory and Practice 2020 (UDEMY)". Main emphasis was placed on implementation of Angular functionality.
+[MyBlog](https://myblog-1d8f8.web.app) is my first full-length project. It was created during the course "[Angular 9. Theory and Practice 2020 (UDEMY)](https://www.udemy.com/course/angular-complete-guide/)". Main emphasis was placed on implementation of Angular functionality.
 
 This application is a simple blog. User interface is made in Ukrainian. Backend functionality is provided by the Firebase service (https://firebase.google.com). Application consists of 2 parts: main (for visitors) and administrative. Administrative part also includes authorization.
 
