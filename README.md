@@ -19,7 +19,9 @@ Admin Panel
 Admin dashboard page (https://myblog-1d8f8.web.app/admin/dashboard) contains a navigation panel, a search field and a post table.
 Navigation panel contains 4 buttons: "Головна" ("Main"), "Адмін-панель" ("Admin panel"), "Створити" ("Create") and "Вийти" ("LogOut").
 Clicking "Головна" ("Main") button redirects to the main page (https://myblog-1d8f8.web.app). In this case, authorization is preserved. To get to the main page from the admin panel or authorization page, you can click on the title "MyBlog".
+
 Clicking "Головна" ("Admin panel") button returns to the admin panel (https://myblog-1d8f8.web.app/admin/dashboard).
+
 Clicking "Створити" ("Create") button redirects to the page for creating a new post (https://myblog-1d8f8.web.app/admin/create).
 Clicking "Вийти" ("LogOut") button cancels the authorization and redirects to the authorization page (https://myblog-1d8f8.web.app/admin/login). Search field is used for searching in titles and post contents. At the same time, the posts table is dynamically updated (depending on the match to the search results). Dynamic updating of the table is provided by using a custom pipe.
 Each post in the post table is represented as a row. Table consists of 5 columns: "№", "Автор" ("Author"), "Заголовок" ("Title"), "Дата" ("Date") and "Дія" ("Action").
