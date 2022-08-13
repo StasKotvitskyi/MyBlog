@@ -27,7 +27,7 @@ Navigation panel contains 4 buttons: "Головна" ("Main"), "Адмін-па
 
 Clicking "Головна" ("Main") button redirects to the main page (https://myblog-1d8f8.web.app). In this case, authorization is preserved. To get to the main page from the admin panel or authorization page, you can click on the title "MyBlog".
 
-Clicking "Головна" ("Admin panel") button returns to the admin panel (https://myblog-1d8f8.web.app/admin/dashboard).
+Clicking "Головна" ("Admin panel") button redirects to the admin panel (https://myblog-1d8f8.web.app/admin/dashboard).
 
 Clicking "Створити" ("Create") button redirects to the page for creating a new post (https://myblog-1d8f8.web.app/admin/create).
 
